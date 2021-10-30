@@ -1,0 +1,53 @@
+
+
+<html>
+    <head>
+        <script>
+            function checkforempty() {
+                if (document.getElementById('fName').value == "")
+                {
+                    alert('Information Required');
+                    document.getElementById('fName').style.borderColor = "red";
+                    return false;
+                }
+            }
+
+
+
+        </script>
+        </head>
+        <body>
+        <title>My Third Page</title>
+        <link rel="stylesheet" href="mainstyle.css">
+        <h1 class='peach bold'>Sign Up</h1>
+
+       
+
+           <form method="post" action="#" onsubmit="return checkforempty()">
+            <fieldset>
+            <label>First Name:
+          <input type="text" id="fName" name="fName"></label>
+          <br>
+          <label>Last Name:
+            <input type="text" id="lName" name="lName"></label>
+            <br>
+            <label>Email:
+            <input type="text" id="Email" name="Email"></label>
+            <input type="submit" value="submit">
+
+
+
+
+
+        </fieldset>
+        </form>  
+
+    
+       
+        
+      
+
+        
+    
+</body>
+    
